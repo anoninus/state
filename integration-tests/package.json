@@ -1,0 +1,32 @@
+{
+  "name": "@yazi.nvim/integration-tests",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm tui neovim prepare && NVIM_APPNAME=nvim_integrations tui neovim prepare && concurrently --kill-others --names 'app,cypress' --prefix-colors 'blue,yellow' 'pnpm tui start'  'pnpm cypress open --e2e --browser=electron'",
+    "lint": "pnpx oxlint --type-aware --deny-warnings --report-unused-disable-directives && eslint --max-warnings=0 ."
+  },
+  "devDependencies": {
+    "@catppuccin/palette": "1.8.0",
+    "@eslint/js": "10.0.1",
+    "@tui-sandbox/library": "12.5.4",
+    "@types/node": "24.12.4",
+    "@types/tinycolor2": "1.4.6",
+    "assert": "2.1.0",
+    "concurrently": "10.0.0",
+    "cypress": "15.16.0",
+    "eslint": "10.4.1",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-no-only-tests": "3.4.0",
+    "eslint-plugin-oxlint": "1.67.0",
+    "oxlint": "1.67.0",
+    "oxlint-tsgolint": "0.23.0",
+    "tinycolor2": "1.6.0",
+    "type-fest": "5.6.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.60.0",
+    "wait-on": "9.0.10",
+    "zod": "4.4.3"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@yazi.nvim/plugin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "I forked this from https://github.com/DreamMaoMao/yazi.nvim for my own use.",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "scripts": {
+    "dev": "pnpm --filter ./integration-tests/ dev",
+    "knip": "knip",
+    "lint": "pnpm --filter ./integration-tests/ lint",
+    "markdownlint": "rumdl check",
+    "prettier": "prettier --check .",
+    "tui": "pnpm --filter ./integration-tests/ exec tui"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "21.0.2",
+    "@commitlint/config-conventional": "21.0.2",
+    "@commitlint/types": "21.0.1",
+    "@types/node": "24.12.4",
+    "knip": "6.14.2",
+    "prettier": "3.8.3",
+    "prettier-plugin-organize-imports": "4.3.0",
+    "prettier-plugin-packagejson": "3.0.2",
+    "typescript": "6.0.3"
+  },
+  "packageManager": "pnpm@11.5.0+sha512.dbfcc4f81cf48597afd4bc391ffdf12c11f1a9fb83a395bfa6b0a2d9cc2fd8ffebafdb1ccbd529632153f793904c2615b7f09fe1a345473fd1c35845172a8eb1"
+}
